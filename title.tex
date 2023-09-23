@@ -1,0 +1,126 @@
+%%% Parameters
+{\fontsize{11.5pt}{10pt}\selectfont
+\newcommand{\Cafedra}{Кафедра компьютерных технологий и программной инженерии}
+
+\newcommand{\TeacherPosition}{должность}
+\newcommand{\TeacherName}{фамилия}
+
+\newcommand{\LabNumber}{№}
+\newcommand{\LabName}{Название\_лабораторной}
+\newcommand{\LabCourse}{Название\_дисциплины}
+ 
+\newcommand{\StudentGroup}{номер\_группы}
+\newcommand{\StudentName}{ФИО}
+
+
+%%% Title page
+
+\pagenumbering{gobble} % Remove number from title page
+
+\setlength{\parindent}{0cm} % First line margin
+
+\begin{center}
+	МИНИСТЕРСТВО ОБРАЗОВАНИЯ И НАУКИ РОССИЙСКОЙ ФЕДЕРАЦИИ \\
+	
+	федеральное государственное автономное образовательное учреждение высшего \mbox{образования} \\
+	\vspace{10pt}
+	«САНКТ-ПЕТЕРБУРГСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ АЭРОКОСМИЧЕСКОГО ПРИБОРОСТРОЕНИЯ»
+	
+\end{center}\par
+
+\begin{center}
+	\vspace{12pt}
+	\Cafedra
+\end{center}\par
+
+\vspace{54pt}
+
+ОТЧЕТ \\
+ЗАЩИЩЕН С ОЦЕНКОЙ \\ \par
+\vspace{11pt}
+ПРЕПОДАВАТЕЛЬ 
+
+\begin{table}[H] \centering
+	\begin{tabular}{p{2.05in}p{0.0in}p{1.76in}p{-0.01in}p{1.89in}}
+		
+		% row no:1
+		\multicolumn{1}{p{2.05in}}{\centering {\fontsize{11pt}{1.5pt}\selectfont{\TeacherPosition}}} &
+		\multicolumn{1}{p{0.0in}}{} &
+		\multicolumn{1}{p{1.76in}}{} &
+		\multicolumn{1}{p{-0.01in}}{} &
+		\multicolumn{1}{p{1.89in}}{\centering {\fontsize{12pt}{1.5pt}\selectfont{\TeacherName}}} \\[1pt]
+		\hhline{-~-~-}
+		% row no:2
+		\multicolumn{1}{p{2.05in}} {\centering{\fontsize{10pt}{1.5pt}\selectfont{должность, уч. степень, звание}}} & 
+		\multicolumn{1}{p{0.0in}}{} & 
+		\multicolumn{1}{p{1.76in}} {\centering{\fontsize{10pt}{1.5pt}\selectfont{подпись, дата}}} & 
+		\multicolumn{1}{p{-0.01in}}{} & 
+		\multicolumn{1}{p{1.89in}} {\centering{\fontsize{10pt}{1.5pt}\selectfont{инициалы, фамилия}}} \\[1pt]
+		\hhline{~~~~~}
+		
+	\end{tabular}
+\end{table}
+
+
+\vspace{20pt}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{6.49in}}
+		%row no:1
+		\multicolumn{1}{c}{\fontsize{14pt}{1.5pt}\selectfont {\centering{ОТЧЕТ ПО ЛАБОРАТОРНОЙ РАБОТЕ №\LabNumber}}}\\[10pt]
+		\hhline{~}
+		%row no:2
+		
+		\multicolumn{1}{p{6.49in}}{ \centering{«\LabName»}} \\[50pt]
+		\hhline{~}
+		%row no:3
+		\multicolumn{1}{p{6.49in}}{\centering {по курсу: \MakeUppercase{\LabCourse}}
+		} \\
+		\hhline{~}
+		%row no:4
+		\multicolumn{1}{p{6.49in}}{} \\
+		
+		\hhline{~}
+		
+	\end{tabular}
+\end{table}
+
+\vspace{4pt}
+
+РАБОТУ ВЫПОЛНИЛ\par
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{1.3in}p{1.0in}p{-0.04in}p{1.63in}p{-0.04in}p{1.63in}}
+		% row no:1
+		\multicolumn{1}{p{1.3in}}{\fontsize{11pt}{1.5pt}\selectfont {СТУДЕНТ ГР. №}} & 
+		\multicolumn{1}{p{1.0in}}{\centering {\fontsize{11pt}{1.5pt}\selectfont{\StudentGroup}}} & 
+		\multicolumn{1}{p{-0.04in}}{} & 
+		\multicolumn{1}{p{1.63in}}{} & 
+		\multicolumn{1}{p{-0.04in}}{} & 
+		\multicolumn{1}{p{1.63in}}{\centering {\fontsize{11pt}{1.5pt}\selectfont{\StudentName}}} \\
+		\hhline{~-~-~-}
+		% row no:2
+		\multicolumn{1}{p{1.3in}}{} & 
+		\multicolumn{1}{p{1.0in}}{\centering{\fontsize{10pt}{1.5pt}\selectfont  {№ группы}}} & 
+		\multicolumn{1}{p{-0.04in}}{} & 
+		\multicolumn{1}{p{1.63in}} {\centering{\fontsize{10pt}{1.5pt}\selectfont  {подпись, дата}}} & 
+		\multicolumn{1}{p{-0.04in}}{} & 
+		\multicolumn{1}{p{1.63in}} {\centering{\fontsize{10pt}{1.5pt}\selectfont  {инициалы, фамилия}}} \\
+		\hhline{~~~~~~}
+		
+	\end{tabular}
+\end{table}
+
+\vspace*{\fill}
+
+\begin{center}
+	Санкт-Петербург \the\year{}
+\end{center}\par
+
+\newpage
+
+\setlength{\parindent}{1.25cm} % Restore first line margin
+\pagenumbering{arabic} % Restore page numbering
+}
